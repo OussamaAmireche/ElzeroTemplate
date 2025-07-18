@@ -11,7 +11,7 @@ let minutes = document.querySelector('#minutes p');
 let seconds = document.querySelector('#seconds p');
 
 let counter = setInterval(() => {
-    let time = new Date('december 31, 2024 23:59:59').getTime() - new Date().getTime();
+    let time = new Date('december 31, 2030 23:59:59').getTime() - new Date().getTime();
     let day = Math.floor(time / (1000 * 3600 * 24));
     let hour = Math.floor(time % (1000 * 3600 * 24) / (1000 * 3600));
     let minute = Math.floor((time % (1000 * 3600 * 24)) % (1000 * 3600) / (1000 * 60));
